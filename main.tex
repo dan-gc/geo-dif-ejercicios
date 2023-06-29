@@ -52,7 +52,7 @@
 \thispagestyle{empty}
 
 \begin{center}
-{\Large \bf \scshape Ejercicios de Geometría Diferencial (Curso de posgrado)}\\
+{\Large \bf Ejercicios de Geometría Diferencial (Curso de posgrado)}
 *cualquier observación o contribución es bienvenida
 \end{center}
 \section*{Cambios de coordenadas}
@@ -108,23 +108,23 @@ $$\frac{d\psi}{dt}=\frac{\varphi'(s^{-1}(t))}{|\varphi'(s^{-1}(t))|}=1$$
 De tal forma que $\psi$ es una parametrización local de $M$ por longitud de arco.
 \newpage
 \section*{Formas en la esfera}
-\textbf{Faltó escribir la pregunta…}\\
+\textbf{Falt\'o escribir la pregunta…}
 
-\textbf{1. a}\\ \\
+\textbf{1. a}
 Supongamos que $X$ es un campo vectorial definido en $U\cap V$. Expresándolo de acuerdo a la base ``norte", tenemos que:
 \begin{equation*}
     \begin{split}
         dx_S(X)=dx_S\left(X^1\frac{\partial}{\partial x_N}+X^2\frac{\partial}{\partial y_N}\right)&= X^1dx_S\left(\frac{\partial}{\partial x_N}\right)
         + X^2dx_S\left(\frac{\partial}{\partial y_N}\right)\\
     \end{split}
-\end{equation*}\\
-Recordemos las expresiones de cambio de coordenadas\\
+\end{equation*}
+Recordemos las expresiones de cambio de coordenadas
 \begin{equation*}
     \begin{split}
             &\frac{\partial}{\partial x_N}=\frac{\partial x_S}{\partial x_N}\frac{\partial}{\partial x_S}+\frac{\partial y_S}{\partial x_N}\frac{\partial}{\partial y_S}\\
     &\frac{\partial}{\partial y_N}=\frac{\partial x_S}{\partial y_N}\frac{\partial}{\partial x_S}+\frac{\partial y_S}{\partial x_N}\frac{\partial}{\partial y_S}
     \end{split}
-\end{equation*}\\
+\end{equation*}
 Sustituyendo, obtenemos que
 \begin{equation*}
     \begin{split}
@@ -173,7 +173,7 @@ Sustituyendo más...
     \end{split}
 \end{equation*}
 
-\textbf{1. b}\\ \\
+\textbf{1. b}
 Primero notemos que
 \begin{equation*}
     \begin{split}
@@ -340,7 +340,7 @@ Aplicando teorema de la divergencia vía Stokes y el hecho de que $\text{vol }B^
 \end{align*}
 Observación: las dos primeras igualdades en la expresión anterior requieren justificación.
 \newpage
-\section*{Pullback de una forma diferencial}\\
+\section*{Pullback de una forma diferencial}
 
 Sean $F:M\longrightarrow N$ una función suave y  $\omega$ una $k$-forma diferencial en $N$. El \textbf{pullback} de $\omega$ es una $k$-forma en $M$ dada por  
 \begin{equation*}
@@ -352,17 +352,17 @@ Eventualmente se definirá la integral de una forma (que puede medir un volumen)
 \begin{equation*}
     \int_U\omega=\int_{\phi(U)}(\phi^{-1})^*\omega
 \end{equation*}
-llevando así la integral a $\mathbf{R}^n$. \\ \par
-    \par\textbf{Lema 14.16}. \emph{Para $F:M\longrightarrow N$ suave,
+llevando así la integral a $\mathbf{R}^n$. \par
+    \par\textbf{Lema 14.16}. Para $F:M\longrightarrow N$ suave,
     \begin{enumerate}[label=(\alph*)]
         \item $F^*:\Omega^k(N)\longrightarrow\Omega^k(M)$ es lineal sobre $\mathbf{R}$
         \item $F^*(\omega\wedge\eta)=F^*\omega\wedge F^*\eta$
         \item En cualquier carta coordenada,
         \begin{equation*}
-            F^*\left(\sum_{I}^{}^{\big'}\omega_Idy^{i_1}\wedge ...\wedge dy^{i_k}\right)=\sum_I^{}^{\big'} (\omega_I\circ F) d(y^{i_1}\circ F)\wedge ...\wedge  d(y^{i_k}\circ F)
+            F^*\left(\sum_{I}^{\big'}\omega_Idy^{i_1}\wedge ...\wedge dy^{i_k}\right)=\sum_I^{}^{\big'} (\omega_I\circ F) d(y^{i_1}\circ F)\wedge ...\wedge  d(y^{i_k}\circ F)
         \end{equation*}
     \end{enumerate}
-}
+
 \par \emph{Demostración.}
 \begin{enumerate}[label=(\alph*)]
     \item Para $a\in \mathbf{R}$ y dos $k$-formas en $N$,
@@ -460,7 +460,7 @@ Vamos a la demostración. Hay que ver que $\varphi^*\widetilde{\nabla}$ es $\mat
     &=(\varphi^{-1})_*(\tilde{f}\widetilde{\nabla}_{\varphi_*X_1}\varphi_*Y+\widetilde{\nabla}_{\varphi_*X_2}\varphi_*Y)\\
     &=(\varphi^{-1})_*(\tilde{f}\widetilde{\nabla}_{\varphi_*X_1}\varphi_*Y)+(\varphi^{-1})_*\widetilde{\nabla}_{\varphi_*X_2}\varphi_*Y\\
     &=\tilde{f}\circ\varphi^{-1}(\varphi^{-1})_*\widetilde{\nabla}_{\varphi_*X_1}\varphi_*Y+(\varphi^{-1})_*\widetilde{\nabla}_{\varphi_*X_2}\varphi_*Y\\
-    &=f(\varphi^{-1})_*\widetilde{\nabla}_{\varphi_*X_1}\varphi_*Y+(\varphi^{-1})_*\widetilde{\nabla_}{\varphi_*X_2}\varphi_*Y\\
+    &=f(\varphi^{-1})_*\widetilde{\nabla}_{\varphi_*X_1}\varphi_*Y+(\varphi^{-1})_*\widetilde{\nabla}_{\varphi_*X_2}\varphi_*Y\\
     &=f(\varphi^*\widetilde{\nabla})_{X_1}\varphi_*Y+(\varphi^*\widetilde{\nabla})_{X_2}\varphi_*Y
     \end{align*}
 \newpage
