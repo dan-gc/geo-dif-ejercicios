@@ -1,61 +1,35 @@
 \documentclass[11pt]{article}
-\usepackage[utf8]{inputenc}	% Para caracteres en español
 \usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
-\usepackage{multirow,booktabs}
-\usepackage[table]{xcolor}
-\usepackage{fullpage}
-\usepackage{lastpage}
 \usepackage{enumitem}
 %\usepackage[scale=0.97]{XCharter} %%%FONTNAME
-\usepackage{fancyhdr}
-\usepackage{mathrsfs}
-\usepackage{wrapfig}
-\linespread{1}%%%LINESPREAD
-\usepackage{setspace}
-\usepackage{calc}
-\usepackage{multicol}
-\usepackage{cancel}
-\usepackage[retainorgcmds]{IEEEtrantools}
 \usepackage[margin=3cm]{geometry}
-\usepackage{amsmath}
-\newlength{\tabcont}
-\setlength{\parindent}{0.0in}
-\setlength{\parskip}{0.05in}
 \usepackage{empheq}
-\usepackage{framed}
-\usepackage[most]{tcolorbox}
-\usepackage{xcolor}
-\colorlet{shadecolor}{orange!15}
-\parindent 0in
-\parskip 12pt
-\geometry{margin=1in, headsep=0.25in}
-\theoremstyle{definition}
-\newtheorem{defn}{Definition}
-\newtheorem{reg}{Rule}
-\newtheorem{exer}{Exercise}
-\newtheorem{note}{Note}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,      
-    urlcolor=cyan,
-    pdftitle={Overleaf Example},
-    pdfpagemode=FullScreen,
+    linkcolor=blue
     }
-
-\urlstyle{same}
+\renewcommand{\contentsname}{Índice}
 \begin{document}
-\setcounter{section}{0}
 \title{}
 
 \thispagestyle{empty}
 
 \begin{center}
 {\Large \bf Ejercicios de Geometría Diferencial (Curso de posgrado)}
-*cualquier observación o contribución es bienvenida
 \end{center}
-\section*{Cambios de coordenadas}
+\vspace{0.3cm}
+Este documento es una compilación de ejercicios para el curso de posgrado de Geometría Diferencial. Aunque hay varias cosas que se podrían mejorar, también hay ejercicios bien trabajados. ¡Todxs son bienvenidos a intervenir este documento!
+\begin{itemize}
+	\item Pueden descargar una copia de los archivos en \href{https://github.com/danimalabares/geo-dif-exercises}{GitHub}
+	\item Y también pueden editar directamente el documento en \href{https://www.overleaf.com/2426362393jhtzyfnpbmdy}{OverLeaf}.
+\end{itemize}
+
+
+\tableofcontents
+\newpage
+\section{Cambios de coordenadas}
+\textbf{Aquí falta algo de contexto…}\vspace{1cm}
 
 Veamos que
 \begin{align*}
@@ -107,7 +81,7 @@ Por fin, si definimos $\psi=\varphi\circ s^{-1}$ obtenemos
 $$\frac{d\psi}{dt}=\frac{\varphi'(s^{-1}(t))}{|\varphi'(s^{-1}(t))|}=1$$
 De tal forma que $\psi$ es una parametrización local de $M$ por longitud de arco.
 \newpage
-\section*{Formas en la esfera}
+\section{Formas en la esfera}
 \textbf{Falt\'o escribir la pregunta…}
 
 \textbf{1. a}
@@ -192,7 +166,7 @@ Y ahora sustituimos una última vez:
 \end{equation*}
 
 \newpage
-\section*{Función de transición}
+\section{Función de transición}
 \textbf{Calcule la función de transición de $T\mathbb{S}^2$ asociada a las dos trivializaciones locales determinadas por la proyección estereográfica de la esfera $\mathbb{S}^2$}.\par
 %Las trivializaciones locales de la esfera determinadas por cada función de transición están dadas por las coordenadas de cada vector tangente de acuerdo a las cartas coordenadas.
 Siguiendo el comentario de Lee, tenemos que la función $\tau$ que buscamos es la matriz jacobiana asociada al mapeo de transición entre las dos proyecciones estereográficas.\par
@@ -211,7 +185,7 @@ de forma que la composición es
 Y la matriz jacobiana de esta función es *Falta*
 
 \newpage
-\section*{Forma de volumen}
+\section{Forma de volumen}
 \textbf{Sea $(M,g)$ una variedad Riemanniana orientada. Entonces existe una única $n$-forma $dV$ en $M$ que llamaremos \textit{forma de volumen} que satisface cualquiera de las siguientes propiedades equivalentes:}
 \begin{enumerate}[label={(\arabic*)}]
     \item Si $(\epsilon^1,...,\epsilon^n)$ es cualquier comarco ortonormal local orientado en $T^*M$, entonces
@@ -256,7 +230,7 @@ $$\det{g_{ij}}=\det{A^TA}=\det{A^T}\det{A}=(\det{A})^2$$
 De esta forma, $f=\pm\sqrt{\det{A}}$. Como los dos marcos son orientados, por definición el determinante de la matriz $(A^i_j)$ debe ser positivo, y como este determinante es justamente $f$, tomamos el signo positivo y hemos terminado.\par
 Observación: falta comprobar que (3) implica (2).\newpage
 
-\section*{Inmersión isométrica del toro plano en $\mathbb R^2$}
+\section{Inmersión isométrica del toro plano en $\mathbb R^2$}
 \textbf{Dé una inmersión isométrica del toro plano, $\mathbb{T}^n$ a $\mathbb{R}^{2n}$.}\par
 (Creo que no está del todo bien) Para dar una definición correcta de $\mathbb{T}^n$, consideremos la función 
 \begin{align*}
@@ -280,7 +254,7 @@ $$\langle d_p\varphi e_i,d_p\varphi e_j\rangle=\langle (0,\cdots, -\sin{\theta_i
 Una inmersión isométrica de $\mathbb{T}^n$ a $\mathbb{R}^{2n}$ es la identidad restringida a la imagen de $\varphi$.
 
 \newpage
-\section*{Transporte paralelo en el cono}
+\section{Transporte paralelo en el cono}
 \textbf{Considere la esfera $S^2\subset\mathbb{R}^2$. Sea $\gamma$ un paralelo de latitud $\psi$. (Por lo que, si $(\theta,\varphi)\in[0,2\pi]\times[0,\pi]$ son coordenadas esféricas sobre $S^2$, entonces $\psi=\pi/2-\varphi$). Sea $\mathbf{V}_0$ un vector tangente a $S^2$ en algún punto de $\gamma$, y sea $\alpha_0$ el ángulo que forma $\mathbf{V}_0$ con $\gamma$. Deduzca una expresión para $\alpha$, el ángulo que forma el transporte paralelo de $\mathbf{V}_0$ a lo largo de $\gamma$, en términos de la latitud $\psi$ y la longitud del recorrido sobre $\gamma$. En particular, encuentre una expresión para $\alpha$ cuando el recorrido es una vuelta completa sobre $\gamma$.}\par
 
 \textit{Sugerencia: considere el cono tangente a $S^2$ a lo largo de $\gamma$. Demuestre que el transporte paralelo de $\mathbf{V}_0$ a lo largo de $\gamma$ no depende de si se toma relativo a $S^2$ o al cono.}\par
@@ -318,7 +292,7 @@ $$0<\rho,\quad \quad\quad 0<\theta<2\pi\text{sen }\psi$$
 se puede dar usando una aplicación que preserva la primera forma fundamental del cono y la del plano de acuerdo una parametrización con coordenadas polares. Precisamente por preservar la primera forma fundamental, dos superficies localmente isométricas tienen el mismo transporte paralelo, y hemos terminado.
 \newpage
 
-\section*{Integral de la curvatura escalar en la esfera}
+\section{Integral de la curvatura escalar en la esfera}
 \textbf{Pruebe que la curvatura escalar en un punto $p$ de una variedad Riemanniana $n$-dimensional $M$ está dada por}
 $$K(p)=\frac{1}{\omega_{n-1}}\int_{S^{n-1}}\text{Ric}_p(x)dS^{n-1}$$
 \textbf{de acuerdo a las definiciones}
@@ -340,7 +314,7 @@ Aplicando teorema de la divergencia vía Stokes y el hecho de que $\text{vol }B^
 \end{align*}
 Observación: las dos primeras igualdades en la expresión anterior requieren justificación.
 \newpage
-\section*{Pullback de una forma diferencial}
+\section{Pullback de una forma diferencial}
 
 Sean $F:M\longrightarrow N$ una función suave y  $\omega$ una $k$-forma diferencial en $N$. El \textbf{pullback} de $\omega$ es una $k$-forma en $M$ dada por  
 \begin{equation*}
@@ -359,7 +333,7 @@ llevando así la integral a $\mathbf{R}^n$. \par
         \item $F^*(\omega\wedge\eta)=F^*\omega\wedge F^*\eta$
         \item En cualquier carta coordenada,
         \begin{equation*}
-            F^*\left(\sum_{I}^{\big'}\omega_Idy^{i_1}\wedge ...\wedge dy^{i_k}\right)=\sum_I^{}^{\big'} (\omega_I\circ F) d(y^{i_1}\circ F)\wedge ...\wedge  d(y^{i_k}\circ F)
+            F^*\left(\sum_{I}^{'}\omega_Idy^{i_1}\wedge\ldots\wedge dy^{i_k}\right)=\sum_I^{'} (\omega_I\circ F) d(y^{i_1}\circ F)\wedge \ldots\wedge  d(y^{i_k}\circ F)
         \end{equation*}
     \end{enumerate}
 
@@ -395,7 +369,7 @@ llevando así la integral a $\mathbf{R}^n$. \par
 \end{enumerate}
 \newpage
 
-\section*{Ley de transformación para los coeficientes de una conexión}
+\section{Ley de transformación para los coeficientes de una conexión}
 \textbf{Sean $M$ una variedad suave con o sin frontera y $\nabla$ una conexión en $TM$. Tomemos dos marcos locales $(E_i)$ y $(\widetilde{E}_j)$ de $TM$ en algún abierto $U\subseteq M$. Supongamos que se tiene la relación }
 \begin{equation}
     \widetilde{E}_i=A_i^jE_j
@@ -432,7 +406,7 @@ Donde el último paso se puede pensar como un producto de matrices.
 %\end{align*}
 \newpage
 
-\section*{Pullback de una conexión}
+\section{Pullback de una conexión}
 
 \textbf{Sean $M$ y $\widetilde{M}$ variedades suaves con o sin frontera. Supongamos que $\widetilde{\nabla}$ es una conexión en $T\widetilde{M}$ y $\varphi:M\longrightarrow\widetilde{M}$ es un difeomorfismo. Entonces, el mapeo}
 $$\varphi^*\widetilde{\nabla}:\mathfrak{X}(M)\times\mathfrak{X}(M)\longrightarrow\mathfrak{X}(M)$$
@@ -465,9 +439,16 @@ Vamos a la demostración. Hay que ver que $\varphi^*\widetilde{\nabla}$ es $\mat
     \end{align*}
 \newpage
     \item Usando la misma notación para $\tilde{f}$,
-    \begin{align*}        (\varphi^*\widetilde{\nabla})_{X}(fY)&=(\varphi^{-1})_*\widetilde{\nabla}_{\varphi_*X}\varphi_*(fY)\\
+    \begin{align*}       
+		(\varphi^*\widetilde{\nabla})_{X}(fY)&=(\varphi^{-1})_*\widetilde{\nabla}_{\varphi_*X}\varphi_*(fY)\\
      &=(\varphi^{-1})_*\widetilde{\nabla}_{\varphi_*X}\tilde{f}\varphi_*\varphi_*Y\\
-     &=(\varphi^{-1})_*\left( \varphi_*X\tilde{f}\varphi_*Y+\tilde{f}\widetilde{\widetilde{\nabla}_}{\varphi_*X}\varphi_*Y\right)\\
+     &=(\varphi^{-1})_*\left( \varphi_*X\tilde{f}\varphi_*Y+\tilde{f}\widetilde{\widetilde{\nabla}}{\varphi_*X}\varphi_*Y\right)\\
+     &=(\varphi^{-1})_*\varphi_*X\tilde{f}\varphi_*Y+(\varphi^{-1})_*(\tilde{f}\widetilde{\nabla}_{\varphi_*X}\varphi_*Y)\\
+     &=(\varphi_*X\tilde{f}\circ\varphi^{-1})(\varphi^{-1})_*\varphi_*Y+(\tilde{f}\circ\varphi^{-1})(\varphi^{-1})_*\widetilde{\nabla}_{\varphi_*X}\varphi_*Y\\
+     &=Xf(\varphi^{-1})_*\varphi_*Y+f(\varphi^{-1})_*\widetilde{\nabla}_{\varphi_*X}\varphi_*Y\\
+     &=XfY+f(\varphi^*\widetilde{\nabla})_{X}Y_{X}(fY)&=(\varphi^{-1})_*\widetilde{\nabla}_{\varphi_*X}\varphi_*(fY)\\
+     &=(\varphi^{-1})_*\widetilde{\nabla}_{\varphi_*X}\tilde{f}\varphi_*\varphi_*Y\\
+     &=(\varphi^{-1})_*\left( \varphi_*X\tilde{f}\varphi_*Y+\tilde{f}\widetilde{\widetilde{\nabla}}{\varphi_*X}\varphi_*Y\right)\\
      &=(\varphi^{-1})_*\varphi_*X\tilde{f}\varphi_*Y+(\varphi^{-1})_*(\tilde{f}\widetilde{\nabla}_{\varphi_*X}\varphi_*Y)\\
      &=(\varphi_*X\tilde{f}\circ\varphi^{-1})(\varphi^{-1})_*\varphi_*Y+(\tilde{f}\circ\varphi^{-1})(\varphi^{-1})_*\widetilde{\nabla}_{\varphi_*X}\varphi_*Y\\
      &=Xf(\varphi^{-1})_*\varphi_*Y+f(\varphi^{-1})_*\widetilde{\nabla}_{\varphi_*X}\varphi_*Y\\
@@ -477,7 +458,7 @@ Vamos a la demostración. Hay que ver que $\varphi^*\widetilde{\nabla}$ es $\mat
 \end{enumerate}
 \newpage
 
-\section*{Campos vectoriales y flujos}
+\section{Campos vectoriales y flujos}
 \textbf{(Problemas de Flujos \#4). Dé un ejemplo de campos vectoriales $X,Y$ y $W$ en $\mathbb{R}^2$ tales que $X=Y=\frac{\partial}{\partial x} $ a lo largo del eje $x$ pero que $\mathcal{L}_XW\neq\mathcal{L}_YW$}.\par
 Consideremos los campos que hacen esto algebraicamente más sencillo:
 $$X=\frac{\partial}{\partial x}$$
@@ -518,13 +499,13 @@ Finalmente, una homotopía con la identidad es $H(s,p)=\theta(p,sT)$.
 
     \newpage
 
-\section*{Mapeos multilineales}
+\section{Mapeos multilineales}
 \textbf{(Álgebra tensorial 1) Sea V un espacio vectorial de dimensión finita. Existe un isomorfismo natural (i.e. independiente de la base) entre $T^{(k+l,l)}$ y el espacio de todos los mapeos multilineales:}
 $$T:\underbrace{V^*\times...\times V^*}_{k \text{ veces}}\times \underbrace{V \times ... \times V}_{\ell \text{ veces}}\longrightarrow V$$
 Para un mapeo multilineal $T$ como arriba podemos definir $$\hat{T}(\omega_1,...,\omega_{k+1},v_1,...,v_\ell)=\omega_{k+1}(T(\omega_1,...,\omega_k,v_1,...,v_\ell)$$\par
 La asociación $T\mapsto \hat{T}$ es el isomorfismo que buscamos. La linealidad se sigue trivialmente de la linealidad $T$ y de la forma diferencial $\omega_{k+1}$. Para ver que es inyectiva hay que invocar el resultado de que si todos los funcionales de un espacio vectorial (en este caso $\omega_{k+1}$, que podemos variar libremente) se hacen cero en el mismo vector (en este caso $T(\omega_1,...,\omega_k,v_1,...,v_\ell$)), entonces ese vector debe ser el cero. *Falta*
 \newpage
-\section*{Lema de Poincaré para conjuntos estrellados}
+\section{Lema de Poincaré para conjuntos estrellados}
 \textbf{(Álgebra tensorial 2) Si $U$ es un subconjunto estrellado de $\mathbb{R}^n$ o $\mathbb{H}^n$, entonces cualquier 1-forma cerrada definida en $U$ es exacta.}\par
 
 Mostraremos que
@@ -542,7 +523,7 @@ Supongamos que $\omega=\sum_{i=1}^n\omega_idx^i$. Para encontrar la derivada ext
     \end{align*}
     Usando que como $\omega$ es cerrada, $$\frac{\partial \omega_i}{\partial x^j}=\frac{\partial \omega_j}{\partial x^i}$$
 \newpage
-\section*{Tensores: cambios de coordenadas}
+\section{Tensores: cambios de coordenadas}
 \textbf{1}\\ \\
 Veamos primero que si $i\neq j$, $A_j^i=0$.
 Consideremos las bases

@@ -1,0 +1,15 @@
+\contentsline {section}{\numberline {1}Cambios de coordenadas}{2}{section.1}%
+\contentsline {section}{\numberline {2}Formas en la esfera}{4}{section.2}%
+\contentsline {section}{\numberline {3}Función de transición}{6}{section.3}%
+\contentsline {section}{\numberline {4}Forma de volumen}{7}{section.4}%
+\contentsline {section}{\numberline {5}Inmersión isométrica del toro plano en $\mathbb R^2$}{9}{section.5}%
+\contentsline {section}{\numberline {6}Transporte paralelo en el cono}{10}{section.6}%
+\contentsline {section}{\numberline {7}Integral de la curvatura escalar en la esfera}{13}{section.7}%
+\contentsline {section}{\numberline {8}Pullback de una forma diferencial}{14}{section.8}%
+\contentsline {section}{\numberline {9}Ley de transformación para los coeficientes de una conexión}{16}{section.9}%
+\contentsline {section}{\numberline {10}Pullback de una conexión}{17}{section.10}%
+\contentsline {section}{\numberline {11}Campos vectoriales y flujos}{19}{section.11}%
+\contentsline {section}{\numberline {12}Flujos y homotopía}{20}{section.12}%
+\contentsline {section}{\numberline {13}Mapeos multilineales}{21}{section.13}%
+\contentsline {section}{\numberline {14}Lema de Poincaré para conjuntos estrellados}{22}{section.14}%
+\contentsline {section}{\numberline {15}Tensores: cambios de coordenadas}{23}{section.15}%
